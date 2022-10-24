@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 57px 47px;
+    max-width: 100vw;
+    min-height: 100vh;
+    background-color:#f3f2f9;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    max-width: 1040px;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    background-color: #f3f2f9;
+    gap: 47px 57px;
+}
+.card{
+    width: 216px;
+    aspect-ratio: 1 / 1.378;
+    /* margin: 22px 25px; */
+    background-color: cadetblue;
+    box-shadow: 0px 0px 15px rgb(224, 224, 224);
+}
+.item{
+    width: 100%;
+    height: 27%;
+    position: relative;
+}
+.item .font-icon{
+    font-size: 1rem;
+    color: #fff;
+    margin: 10px 0px 0px 10px;
+}
+.item .custom-checkbox{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 15px;
+    width: 15px;
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 2px;
+}
+.custom-checkbox .tick{
+    position: absolute;
+    left: 4px;
+    top:2px;
+    width: 30%;
+    height: 60%;
+    transform: rotate(40deg);
+    visibility: hidden;
+}
+.card .item .custom-checkbox .tick{
+        border-top: none;
+        border-left: none;
+}
+.img-box{
+    position: relative;
+}
+.pro-pic{
+    position: absolute;
+    height: 60px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    border: 3px solid white;
+    left:50%;
+    translate: -50% -50%;
+}
+.content{
+    padding: 15px 25px;
+    text-align: center;
+
+}
+.content .name{
+    color: #606060;
+    font-family: playball;
+    font-weight: 500;
+}
+.content .about{
+    color: #adadad;
+    font-family: 'Nunito Sans',sans-serif;
+    font-size: 11px;
+}
+.checkbox{
+    display: none;
+}
+.label{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius:3px;
+}
+/* .pinterest on check */
+.pinterest{
+    background: linear-gradient(to bottom , #bd071e 0% 27%, #fff 27% 100%);    
+}
+.pinterest .pro-pic{
+    box-shadow: 0px 0px 15px #bd071f63;
+}
+.pinterest .tick{
+    border: 1px solid #bd071e;
+}
+.checkbox:checked ~ .pinterest{
+    background: linear-gradient(to bottom , #fff 0% 27%, #bd071e 27% 100%);
+}
+.checkbox:checked ~ .pinterest .item .item-content .custom-checkbox{
+    border: 1px solid #bd071e;
+}
+.checkbox:checked ~ .pinterest .item .item-content .font-icon{
+    color: #bd071e;
+}
+
+/* .facebook on check*/
+
+.facebook{
+    background: linear-gradient(to bottom , #3b599a 0% 27%, #fff 27% 100%); 
+}
+.facebook .pro-pic{
+    box-shadow: 0px 0px 15px #3b599a65;
+}
+.checkbox:checked ~ .facebook{
+        background: linear-gradient(to bottom , #fff 0% 27%, #3b599a 27% 100%); 
+}
+.checkbox:checked ~ .facebook .item .item-content .custom-checkbox{
+    border: 1px solid #3b599a;
+}
+.checkbox:checked ~ .facebook .item .item-content .font-icon{
+    color: #3b599a;
+}
+.facebook .tick{
+    border: 1px solid #3b599a;
+
+}
+
+/* .instagram */
+.instagram{
+    background: linear-gradient(to bottom , #c13584 0% 27%, #fff 27% 100%);
+}
+.instagram .pro-pic{
+    box-shadow: 0px 0px 15px #c1358477;
+}
+.checkbox:checked ~ .instagram{
+    background: linear-gradient(to bottom , #fff 0% 27%, #c13584 27% 100%); 
+}
+.checkbox:checked ~ .instagram .item .item-content .custom-checkbox{
+    border: 1px solid #c13584;
+}
+.checkbox:checked ~ .instagram .item .item-content .font-icon{
+    color: #c13584;
+}
+.instagram .tick{
+    border: 1px solid #c13584;
+
+}
+
+/* .behance  */
+.behance{
+    background: linear-gradient(to bottom , #1869ff 0% 27%, #fff 27% 100%);
+}
+.behance .pro-pic{
+    box-shadow: 0px 0px 15px #1869ff94;
+}
+.checkbox:checked ~ .behance{
+    background: linear-gradient(to bottom , #fff 0% 27%, #1869ff 27% 100%); 
+}
+.checkbox:checked ~ .behance .item .item-content .custom-checkbox{
+    border: 1px solid #1869ff;
+}
+.checkbox:checked ~ .behance .item .item-content .font-icon{
+    color: #1869ff;
+}
+.behance .tick{
+    border: 1px solid #1869ff;
+
+}
+/* .dribbble  */
+.dribbble{
+    background: linear-gradient(to bottom , #ea4c88 0% 27%, #fff 27% 100%);
+}
+.dribbble .pro-pic{
+    box-shadow: 0px 0px 15px #ea4c8994;
+}
+.checkbox:checked ~ .dribbble{
+    background: linear-gradient(to bottom , #fff 0% 27%, #ea4c88 27% 100%); 
+}
+.checkbox:checked ~ .dribbble .item .item-content .custom-checkbox{
+    border: 1px solid #ea4c88;
+}
+.checkbox:checked ~ .dribbble .item .item-content .font-icon{
+    color: #ea4c88;
+}
+.dribbble .tick{
+    border: 1px solid #ea4c88;
+
+}
+/* .twitter  */
+.twitter{
+    background: linear-gradient(to bottom , #1ca1f1 0% 27%, #fff 27% 100%);
+}
+.twitter .pro-pic{
+    box-shadow: 0px 0px 15px #1ca1f186;
+}
+.checkbox:checked ~ .twitter{
+    background: linear-gradient(to bottom , #fff 0% 27%, #1ca1f1 27% 100%); 
+}
+.checkbox:checked ~ .twitter .item .item-content .custom-checkbox{
+    border: 1px solid #1ca1f1;
+}
+.checkbox:checked ~ .twitter .item .item-content .font-icon{
+    color: #1ca1f1;
+}
+.twitter .tick{
+    border: 1px solid #1ca1f1;
+
+}
+/* .blogger  */
+.blogger{
+    background: linear-gradient(to bottom , #f57f01 0% 27%, #fff 27% 100%);
+}
+.blogger .pro-pic{
+    box-shadow: 0px 0px 15px #f57f0186;
+}
+.checkbox:checked ~ .blogger{
+    background: linear-gradient(to bottom , #fff 0% 27%, #f57f01 27% 100%); 
+}
+.checkbox:checked ~ .blogger .item .item-content .custom-checkbox{
+    border: 1px solid #f57f01;
+}
+.checkbox:checked ~ .blogger .item .item-content .font-icon{
+    color: #f57f01;
+}
+.blogger .tick{
+    border: 1px solid #f57f01;
+
+}
+/* .linkedin  */
+.linkedin{
+    background: linear-gradient(to bottom , #0177b6 0% 27%, #fff 27% 100%);
+}
+.linkedin .pro-pic{
+    box-shadow: 0px 0px 15px #0177b686;
+}
+.checkbox:checked ~ .linkedin{
+    background: linear-gradient(to bottom , #fff 0% 27%, #0177b6 27% 100%); 
+}
+.checkbox:checked ~ .linkedin .item .item-content .custom-checkbox{
+    border: 1px solid #0177b6;
+}
+.checkbox:checked ~ .linkedin .item .item-content .font-icon{
+    color: #0177b6;
+}
+.linkedin .tick{
+    border: 1px solid #0177b6;
+
+}
+/* common */
+.checkbox:checked ~ .label .content .name,.checkbox:checked ~ .label .content .about {
+    color: #fff;
+}
+.checkbox:checked ~ .label .item .item-content .custom-checkbox .tick{
+    visibility: visible;    
+}
